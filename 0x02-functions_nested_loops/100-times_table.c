@@ -18,7 +18,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				r = p * q;
-				if (r <= 98)
+				if (r <= 99)
 					_putchar(' ');
 				if (r <= 9)
 					_putchar(' ');
