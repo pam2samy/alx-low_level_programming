@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * rot13 - encoder of rot13
- * @s: poiters to the string parameters
+ * rot13 - encodes a string of rot13
+ * @s: the string parameters
  *
- * Return: *s
+ * Return: Encoded string
  */
 char *rot13(char *s)
 {
 	int i, j;
 	char *letters1 = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
-	char *letters2 = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabdcefghijklm"};
+	char *letters2 = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
