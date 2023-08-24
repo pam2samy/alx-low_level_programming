@@ -8,8 +8,7 @@
  */
 char *rot13(char *s)
 {
-	int i;
-	int j;
+	int i, j;
 	char *letters1 = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
 	char *letters2 = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabdcefghijklm"};
 
