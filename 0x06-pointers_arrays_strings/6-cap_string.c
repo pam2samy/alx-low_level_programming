@@ -26,7 +26,7 @@ char *cap_string(char *n)
 				{
 					if (a[j] == *(n + i - 1))
 					{
-						*(s + i) = *(s + i) - 32;
+						*(n + i) = *(n + i) - 32;
 					}
 				}
 			}
