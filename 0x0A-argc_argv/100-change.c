@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints the minimum number
@@ -10,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int num, i, j;
-	int p[] = {25, 10, 5, 2, 1};
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -26,10 +28,10 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < 5 && num >= 0; i++)
 	{
-		while (num >= p[i])
+		while (num >= coins[i])
 		{
 			j++;
-			num -= p[i];
+			num -= coins[i];
 		}
 	}
 	printf("%d\n", j);
