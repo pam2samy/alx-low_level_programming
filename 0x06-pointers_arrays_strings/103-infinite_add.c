@@ -18,16 +18,16 @@ void rev_string(char *n)
 	}
 	i--;
 
-	for (j = 0; j < i; i++)
+	for (j = 0; j < i; j++, i--)
 	{
-		temp = *(n + 1);
+		temp = *(n + j);
 		*(n + j) = *(n + i);
 		*(n + i) = temp;
 	}
 }
 
 /**
- * infinite_add - add two numbers together
+ * infinite_add - add 2 numbers together
  * @n1: first number to add
  * @n2: second number to add
  * @r: pointer to buffer
