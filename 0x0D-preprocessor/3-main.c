@@ -3,7 +3,6 @@
 #include "3-function_like_macro.h"
 
 /**
-<<<<<<< HEAD
  * main - check the code
  *
  * Return: Always 0.
@@ -17,19 +16,4 @@ int main(void)
     j = ABS(98) * 10;
     printf("%d, %d\n", i, j);
     return (0);
-=======
- *  * main - check the code
- *   *
- *    * Return: Always 0.
- *     */
-int main(void)
-{
-	    int i;
-	        int j;
-
-		    i = ABS(-98) * 10;
-		        j = ABS(98) * 10;
-			    printf("%d, %d\n", i, j);
-			        return (0);
->>>>>>> 71a2272d05bac03b7a12eebcef8be5d270076ba8
 }
