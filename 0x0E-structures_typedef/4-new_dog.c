@@ -2,38 +2,22 @@
 #include "dog.h"
 
 /**
- * _strlen - find the length of a string
- * @str: the string
+ * _strlen - The length of a string
+ * @s: The string
  *
- * Return: The string length
+ * Return: the length of the string
  */
-int _strlen(char *str)
+int _strlen(char *s)
 {
-	int len = 0;
+	int i;
 
-	while (*str++)
-		len++;
+	i = 0;
 
-	return (len);
-}
-
-/**
- * _strcopy - copies a string pointed to by src
- * @dest: the buffer storage
- * @src: source string
- *
- * Return: pointer to dest
- */
-char *_strcopy(char *dest, char *src)
-{
-	int index = 0;
-
-	for (index = 0; src[index]; index++)
-		dest[index] = src[index];
-
-	dest[index] = '\0';
-
-	return (dest);
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 /**
