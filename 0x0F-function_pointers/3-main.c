@@ -5,7 +5,7 @@
 /**
  * main - performs computational functions
  * @argc: argument count
- * @argc: vector
+ * @argv: vector
  *
  * Return: results
  */
