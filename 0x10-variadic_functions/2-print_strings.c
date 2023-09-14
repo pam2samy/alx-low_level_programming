@@ -4,7 +4,7 @@
 
 /**
  * print_strings - Prints strings
- * @separator - The string
+ * @separator:  The string
  * @n: number of strings
  * @...: A variable number
  *
