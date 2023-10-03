@@ -210,7 +210,7 @@ void print_entry(Elf64_Ehdr h)
 		while (!p[index])
 			index++;
 		printf("%x", p[index--]);
-		for (; index >= 0, index--)
+		for (; index >= 0; index--)
 			printf("%02x", p[index]);
 		printf("\n");
 	}
