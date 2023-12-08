@@ -4,7 +4,7 @@
  * add_dnodeint_end - prints the end of node
  * @head: head of the node
  * @n: number of element
- * Return: Anything
+ * Return: Address of the new node
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
