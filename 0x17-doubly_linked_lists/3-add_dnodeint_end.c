@@ -4,30 +4,37 @@
  * add_dnodeint_end - prints the end of node
  * @head: head of the node
  * @n: number of element
+ *
  * Return: Address of the new node
  */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-        dlistint_t *new = malloc(sizeof(dlistint_t)), *node;
+        dlistint_t *h;
+	dlistint_t *new;
+	
+	new = malloc(sizeof(dlistint_t));
 
-        if (!head || !new)
-                return (new ? free(new), NULL : NULL);
+        if (new == NULL)
+                return (NULL);
+
         new-> = n;
         new->next = NULL;
-        if (!*head)
-        {
-                new->prev = NULL;
-                *head = new;
-        }
+
+	h = *head;
+
+        if (h != NULL)
+	{
+		while (h->next != NULL)
+			h = h->next;
+		h->next = new;
+	}
         else
         {
-                node = *head;
-                while (node->next)
-                        node = node->next;
-
-                node->next = new;
-                new->prev = node;
+                *head = new;
         }
+
+	new->prev = h;
+
         return (new);
 }
